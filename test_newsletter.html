@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div style="padding: 50px; background: linear-gradient(100deg, #372e56 10%, #ffc948 96%, #ffd06b 100%);">
+    <div style="max-width: 400px;">
+        <h5 style="color: white;">Newsletter Test</h5>
+        <p style="color: #ede4ce;">Subskrybuj by otrzymać aktualizacje o najnowszych ofertach.</p>
+        <form class="newsletter-form" novalidate>
+            <div class="input-group mb-3">
+                <input type="email" name="email" class="form-control" placeholder="Enter email" aria-label="Wprowadź email" required>
+                <button class="btn btn-primary" type="submit">Subskrybuj</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
